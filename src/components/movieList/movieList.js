@@ -21,6 +21,7 @@ const MovieList = () => {
         .then(res => res.json())
         .then(data => setMovieList(data.results))
     }
+    console.log("movielist page hit");
 
     return (
         <div className="movie__list">
