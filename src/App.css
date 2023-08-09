@@ -26,16 +26,19 @@
 .header_icon{
   width: 20%;
   cursor: pointer;
+  
 }
 a > span{
   margin: 0 30px;
-  font-size: 1.3rem;
+  font-size: 200%;
   cursor: pointer;
   color: white;
 }
 a > span:hover{
   color: red;
 }
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
