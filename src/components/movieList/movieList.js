@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, { useEffect, useState} from "react"
 import "./movieList.css"
 import { useParams } from "react-router-dom"
 import Cards from "../card/Card"
@@ -9,7 +9,7 @@ const MovieList = () => {
     const {type} = useParams()
 
     useEffect(() => {
-        getData()
+        getData()   
     }, [])
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const MovieList = () => {
         .then(res => res.json())
         .then(data => setMovieList(data.results))
     }
-    console.log("movielist page hit");
+    
 
     return (
         <div className="movie__list">
